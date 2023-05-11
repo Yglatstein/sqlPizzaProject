@@ -1,0 +1,21 @@
+.pizza__card{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pizza__img img{
+    width: 150px;
+    margin: 5px;
+}
+
+.pizza__content{
+    h5{
+        margin: 5px;
+    }
+}
+

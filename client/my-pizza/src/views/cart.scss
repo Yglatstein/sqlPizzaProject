@@ -1,0 +1,46 @@
+
+  .cart__item-del i {
+    cursor: pointer;
+  }
+  
+  .cart__page-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+  }
+  
+  .cart__page-btn button a:hover {
+    color: #fff;
+  }
+  
+  .cart__container{
+    text-align: center;
+  }
+
+  .col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart__subtotal {
+    color: #df2020;
+    font-size: 1.5rem;
+  }
+
+  .table{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .addTOCart__btn {
+    border: none;
+    padding: 7px 25px;
+    background: none;
+    color: #fff;
+    gap:5px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
