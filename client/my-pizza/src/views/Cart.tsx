@@ -15,7 +15,6 @@ const Cart = () => {
   const [pizzas, setPizzas] = useState<any[]>([]);
   async function getCustomerCart() {
     const { data } = await axios.get("/api/cart");
-    console.log("cart is: ", data)
     setPizzas(data);
   }
   useEffect(() => {

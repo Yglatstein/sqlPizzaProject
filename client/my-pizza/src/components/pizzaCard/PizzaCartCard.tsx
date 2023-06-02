@@ -34,7 +34,6 @@ const PizzaCard2: FC<PizzaCardProps> = ({
 
   async function getPizzaDetails() {
     const { data } = await axios.get(`/api/pizza/${pizza_id}`);
-    console.log("pizza details: ", data.results)
     setPizzaName(data.results[0].pizza_name)
     setPizzaPrice(data.results[0].pizza_price)
     
@@ -50,7 +49,6 @@ const PizzaCard2: FC<PizzaCardProps> = ({
   }
 
   async function deleteFromCart() {
-    console.log("here")
     const { data } = await axios.delete(`/api/cart/${cart_id}`);
     if(data.ok){
       dispatch(deccrementByAmount(pizza_price))
@@ -74,11 +72,3 @@ const PizzaCard2: FC<PizzaCardProps> = ({
 };
 
 export default PizzaCard2;
-
-// <Route path=`/pizza/:id` element={<PizzaDetails/>}/>
-
-//pizzaDetails:
-//const id = useParams()
-//useEffect (() => {
-//    const {data} = await axios.get("/api/pizzas/${id}")
-//})

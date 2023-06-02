@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import PizzaCard2 from "../components/pizzaCard/PizzaCard2";
-import product from "../../assets/images/pizzas/mushrooms_party.png";
 import axios from "axios";
 
 
@@ -9,7 +8,6 @@ const Menu = () => {
 
   async function getMenu() {
     const { data } = await axios.get("/api/pizza");
-    console.log(data)
     setPizzas(data);
   }
   useEffect(() => {

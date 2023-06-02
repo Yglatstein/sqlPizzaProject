@@ -36,7 +36,6 @@ const PizzaDetails = () => {
   }
   async function addToCart() {
     const { data } = await axios.post(`/api/cart/${pizza.pizza_id}`);
-    console.log("data: ", data) 
   }
   useEffect(() => {
     getPizzaDetails();

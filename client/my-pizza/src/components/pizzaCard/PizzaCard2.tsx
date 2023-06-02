@@ -37,7 +37,6 @@ const PizzaCard2: FC<PizzaCardProps> = ({
   async function getUserFromCookie () {
     const { data } = await axios.get("/api/customer/by-cookie");
     if (data.results != "no user found") setUser(data.results)
-    console.log("data: ", data)
   }
   useEffect(() => {
     getUserFromCookie()
@@ -46,7 +45,6 @@ const PizzaCard2: FC<PizzaCardProps> = ({
   async function addToCart() {
     console.log("user", user)
     const { data } = await axios.post(`/api/cart/${pizza_id}`);
-    console.log("data: ", data);
     dispatch(incrementByAmount(pizza_price));
     alert("item added to cart")
   }

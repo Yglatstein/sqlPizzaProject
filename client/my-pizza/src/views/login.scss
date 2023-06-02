@@ -103,3 +103,24 @@
     
       }
 }
+
+.logout{
+  text-align: center;
+  margin: 20px;
+  
+  button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(237, 195, 139);
+  width: 300px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 20px;
+}
+}
